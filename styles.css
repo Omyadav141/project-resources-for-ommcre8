@@ -1,0 +1,361 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+.bank-list img {
+    width: 100px;
+    height: auto;
+    margin: 10px;
+    cursor: pointer;
+}
+/* Add your CSS styling here */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color:black;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+#results div {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header h1 {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px 0;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    text-align: center;
+}
+
+section p {
+    text-align: center;
+}
+
+section img {
+    display: block;
+    margin: 0 auto;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background: black;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #000000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    animation: slideInDown 1s ease-out;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    animation: fadeIn 1s ease-in;
+}
+
+#search {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.3s;
+}
+
+#search:focus {
+    border-color: #ff7f50;
+}
+
+#results {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px;
+}
+
+#results div {
+    background: rgb(0, 0, 0);
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.944);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    animation: slideInUp 1s ease-out;
+}
+
+#results div:hover {
+    transform: translateY(-10px);
+    background-color: #000000;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.882);
+}
+
+img {
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+h2 a {
+    color: #4c79ff;
+    text-decoration: none;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+h2 a:hover {
+    color: #ff7f50;
+}
+
+p {
+    margin: 10px 0;
+    font-size: 1.1em;
+    color: white;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    #results {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    #results {
+        grid-template-columns: 1fr; /* 1 column for mobile */
+    }
+}
+/* Add this to your existing styles.css */
+header {
+    position: relative;
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: pulse 2s infinite;
+}
+.footer-links {
+    list-style-type: none;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.footer-links li {
+    margin: 0 15px;
+    animation: slideInFromBottom 1s ease-out;
+}
+
+.footer-links a {
+    color: #ffd700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ffffff;
+    transform: scale(1.1);
+}
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #ffd700;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: all 0.3s ease;
+    animation: rotateIn 1s ease-out;
+}
+
+.social-icons a:hover {
+    color: #ffffff;
+    transform: scale(1.2) rotate(15deg);
+}
+nav li {
+    margin: 0 10px;
+}
+
+#loginButton {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#loginButton:hover {
+    background-color: #0056b3;
+}
+
+#loginModal div {
+    text-align: center;
+}
+
+#loginModal label, #loginModal input {
+    display: block;
+    margin: 10px auto;
+}

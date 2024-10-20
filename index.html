@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALL PROJECTS SOURCE</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000000; /* Light blue background for beauty */
+            margin: 0;
+            padding: 20px;
+            animation: fadeIn 1s ease-out;
+        }
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #e0d9d9;
+            color: rgb(255, 255, 255);
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+            animation: glowBorder 2s infinite;
+        }
+
+        .footer-logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #766161;
+            text-align: left;
+            
+        }
+
+        .footer-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .footer-links li {
+            display: inline-block;
+        }
+
+        .footer-links a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: #f5a623;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 10px;
+            justify-content: flex-end;
+        }
+
+        .social-icons a {
+            font-size: 1.5em;
+            color: white;
+            transition: transform 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.2);
+        }
+
+        /* Glowing border animation */
+        @keyframes glowBorder {
+            0% {
+                box-shadow: 0 0 10px #f5a623, 0 0 20px #f5a623, 0 0 30px #f5a623;
+            }
+            50% {
+                box-shadow: 0 0 20px #f5a623, 0 0 30px #f5a623, 0 0 40px #f5a623;
+            }
+            100% {
+                box-shadow: 0 0 10px #f5a623, 0 0 20px #f5a623, 0 0 30px #f5a623;
+            }
+        }
+
+        footer {
+            padding: 10px 0;
+            background-color: #000000;
+            text-align: center;
+            color: #c4b9b9;
+            margin-top: 20px;
+            position: relative;
+        }
+        .menu-toggle {
+                display: block;
+                font-size: 1.5rem;
+                color: #ffd700;
+                cursor: pointer;
+                animation: pulse 2s infinite;
+            }
+        .logo {
+            font-size: 3rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            animation: slideInFromLeft 1s ease-out, pulse 2s infinite;
+            border: #000000;
+        }
+        .b{
+            color: #000000;
+        }
+        
+        footer p {
+            font-size: 0.9em;
+            margin-top: 15px;
+        }
+
+        /* Light border hover effect */
+        .footer-content:hover {
+            box-shadow: 0 0 15px 2px rgba(255, 255, 255, 0.6);
+            transition: box-shadow 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">All projects source</div>
+            <nav>
+                <div class="menu-toggle"></div>
+                <ul>
+                   
+                    <li><a href="index.html"  class="b">⬅ BACK</a></li>
+                        
+                </ul>
+            </nav>
+        </div>         
+    </header>
+    
+        
+        <div class="headline"></div>
+       
+    <main>
+        <input type="text" id="search" placeholder="Search for Demat accounts...">
+        <div id="results"></div>
+    </main>
+
+      
+    <script>
+        const dmatAccounts = [
+            { 
+                name: 'Login page', 
+                file: 'zerodha.html', 
+                image: 'Screenshot (341).png', 
+                rating: 4, 
+                Language: 'html,css,js', 
+                services: 'provide login page for website' 
+            },
+            { 
+                name: '', 
+                file: 'upstox.html', 
+                image: 'upstox.jpeg', 
+                rating: 4.3, 
+                fees: '₹20 per trade', 
+                services: '' 
+            },
+            { 
+                name: '', 
+                file: '5paisa.html', 
+                image: '5paisa.png', 
+                rating: 4.0, 
+                fees: '₹10 per trade', 
+                services: '' 
+            },
+            { 
+                name: '', 
+                file: 'angel-one.html', 
+                image: 'angelone.png', 
+                rating: 4.2, 
+                fees: '₹20 per trade', 
+                services: '' 
+            },
+            { 
+                name: '', 
+                file: 'sharekhan.html', 
+                image: 'sharekhan.png', 
+                rating: 4.1, 
+                fees: '₹20 per trade', 
+                services: 'E' 
+            },
+            { 
+                name: '', 
+                file: 'motilal-oswal.html', 
+                image: 'motilal-oswal.jpeg', 
+                rating: 4.0, 
+                fees: '₹20 per trade', 
+                services: '' 
+            },
+            { 
+                name: '', 
+                file: 'iifl.html', 
+                image: 'iifl.jpeg', 
+                rating: 4.1, 
+                fees: '₹20 per trade', 
+                services: '' 
+            },
+            { 
+                name: '', 
+                file: 'hdfc-securities.html', 
+                image: 'hdfcsec.jpg', 
+                rating: 4.3, 
+                fees: '₹20 per trade', 
+                services: '' 
+            },
+            { 
+                name: '', 
+                file: 'icici-direct.html', 
+                image: 'icicidirect.jpeg', 
+                rating: 4.2, 
+                fees: '₹20 per trade', 
+                services: '' 
+            },
+            { 
+                name: '', 
+                file: 'kotak-securities.html', 
+                image: 'kotaksec.jpg', 
+                rating: 4.0, 
+                fees: '', 
+                services: '' 
+            }
+        ];
+        
+        document.getElementById('search').addEventListener('input', function() {
+            const query = this.value.toLowerCase();
+            const filteredAccounts = dmatAccounts.filter(account => account.name.toLowerCase().includes(query));
+            displayResults(filteredAccounts);
+        });
+
+        function displayResults(accounts) {
+            const resultsDiv = document.getElementById('results');
+            resultsDiv.innerHTML = accounts.map(account => `
+                <div>
+                    <img src="${account.image}" alt="${account.name}" style="width:100px;height:100px;">
+                    <h2><a href="${account.file}" target="_blank">${account.name}</a></h2>
+                    <p>Rating: ${account.rating} ⭐</p>
+                    <p>Language: ${account.Language}</p>
+                    <p>Services: ${account.services}</p>
+                </div>
+            `).join('');
+        }
+
+        // Display all accounts initially
+        displayResults(dmatAccounts);
+    </script>
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">ommcre8</div>
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Reviews</a></li>
+                <li><a href="bank-account.html">AI TOOLS</a></li>
+                <li><a href="cards.html">COURCES</a></li>
+                
+            </ul>
+            <div class="social-icons">
+                <a href="#" aria-label="Facebook"><img src="facebook-logo.jpeg" alt="Facebook" width="24"></a>
+                <a href="#" aria-label="Twitter"><img src="X-Logo.png" alt="X" width="24"></a>
+                <a href="#" aria-label="Instagram"><img src="Instagram-Logo.jpeg" alt="Instagram" width="24"></a>
+            </div>
+        </div>
+        <p>&copy; ommcre8@gmail.com. All rights reserved.</p>
+    </footer>
+</body>
+</html>
